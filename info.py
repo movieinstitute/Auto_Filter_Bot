@@ -45,9 +45,9 @@ BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002754154928'))  # Bin channel i
 DREAMCINEZONE_MOVIE_UPDATE_CHANNEL = int(environ.get('DREAMCINEZONE_MOVIE_UPDATE_CHANNEL', '-1002154031711'))  # Notification of those who verify will be sent to your channel
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002754154928'))  # Premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '-1002082945622 -1002183352539')  # Channel/Group ID for force sub (make sure bot is admin)
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002082945622').split()]
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '7731560752')  # Support group id (make sure bot is admin)
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002453433646')  # Request channel id (make sure bot is admin)
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '')  # Support group id (make sure bot is admin)
+reqst_channel = environ.get('REQST_CHANNEL_ID', '')  # Request channel id (make sure bot is admin)
 AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002082945622 -1002183352539').split()]
 MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002082945622 -1002183352539').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
