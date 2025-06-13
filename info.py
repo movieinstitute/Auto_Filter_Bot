@@ -61,8 +61,8 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'mrinmoysarka3639@naviaxis')
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://singhasarkarmrinmoy:<4IkS90QyhSdje7co>@cluster0.waiownw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://singhasarkarmrinmoy:<4IkS90QyhSdje7co>@cluster0.waiownw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tradersinghasarkar:FIfLwnrv4CyLF8uo@movienstitute1.knasaqj.mongodb.net/?retryWrites=true&w=majority&appName=Movienstitute1")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://tradersinghasarkar:FIfLwnrv4CyLF8uo@movienstitute1.knasaqj.mongodb.net/?retryWrites=true&w=majority&appName=Movienstitute1")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
@@ -73,7 +73,8 @@ DREAMCINEZONE_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DREAMCINEZONE_MOVIE_
 DREAMCINEZONE_IMAGE_FETCH = bool(environ.get('DREAMCINEZONE_IMAGE_FETCH', True))  # On (True) / Off (False)
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
-# ============================
+# ============================mongodb+srv://singhasarkarmrinmoy:<4IkS90QyhSdje7co>@cluster0.waiownw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 # Verification Settings
 # ============================
 VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
