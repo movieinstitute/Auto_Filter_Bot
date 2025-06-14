@@ -62,15 +62,15 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'mrinmoysarka3639@naviaxis')
 # MongoDB Configuration
 # ============================
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tradersinghasarkar:FIfLwnrv4CyLF8uo@movienstitute1.knasaqj.mongodb.net/?retryWrites=true&w=majority&appName=Movienstitute1")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://dipsinghasarkar:zUlHwmlh5PV45Yv7@dipak10.m9juu87.mongodb.net/?retryWrites=true&w=majority&appName=Dipak10")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://dipaksinghasarkar:aiiepW3vzlBbvZxA@cluster0.vzagz6b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
 # ============================
 # Movie Notification & Update Settings
 # ============================
-DREAMCINEZONE_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DREAMCINEZONE_MOVIE_UPDATE_NOTIFICATION', False))  # Notification On (True) / Off (False)
-DREAMCINEZONE_IMAGE_FETCH = bool(environ.get('DREAMCINEZONE_IMAGE_FETCH', False))  # On (True) / Off (False)
+DREAMCINEZONE_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DREAMCINEZONE_MOVIE_UPDATE_NOTIFICATION', True))  # Notification On (True) / Off (False)
+DREAMCINEZONE_IMAGE_FETCH = bool(environ.get('DREAMCINEZONE_IMAGE_FETCH', True))  # On (True) / Off (False)
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
 # ============================mongodb+srv://singhasarkarmrinmoy:<4IkS90QyhSdje7co>@cluster0.waiownw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -117,7 +117,7 @@ PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'Share & Support Us ♥️')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+6odkYZIxNsQxYmJl')  # Support group link (make sure bot is admin)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 DELETE_TIME = int(environ.get("DELETE_TIME", "300"))  #  deletion time in seconds (default: 5 minutes). Adjust as per your needs.
@@ -125,7 +125,7 @@ SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False) # pm 
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
-LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), True)
+LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
