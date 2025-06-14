@@ -69,15 +69,15 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 # ============================
 # Movie Notification & Update Settings
 # ============================
-DREAMCINEZONE_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DREAMCINEZONE_MOVIE_UPDATE_NOTIFICATION', True))  # Notification On (True) / Off (False)
-DREAMCINEZONE_IMAGE_FETCH = bool(environ.get('DREAMCINEZONE_IMAGE_FETCH', True))  # On (True) / Off (False)
+DREAMCINEZONE_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DREAMCINEZONE_MOVIE_UPDATE_NOTIFICATION', False))  # Notification On (True) / Off (False)
+DREAMCINEZONE_IMAGE_FETCH = bool(environ.get('DREAMCINEZONE_IMAGE_FETCH', False))  # On (True) / Off (False)
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
 # ============================mongodb+srv://singhasarkarmrinmoy:<4IkS90QyhSdje7co>@cluster0.waiownw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 # Verification Settings
 # ============================
-VERIFY = bool(environ.get('VERIFY', True))  # Verification On (True) / Off (False)
+VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
 DREAMCINEZONE_VERIFY_EXPIRE = int(environ.get('DREAMCINEZONE_VERIFY_EXPIRE', 24))  # Add time in hours
 DREAMCINEZONE_VERIFIED_LOG = int(environ.get('DREAMCINEZONE_VERIFIED_LOG', '-1002754154928'))  # Log channel id (make sure bot is admin)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/dreamcinezone')  # How to open tutorial link for verification
