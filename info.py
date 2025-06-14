@@ -62,7 +62,7 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'mrinmoysarka3639@naviaxis')
 # MongoDB Configuration
 # ============================
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tradersinghasarkar:FIfLwnrv4CyLF8uo@movienstitute1.knasaqj.mongodb.net/?retryWrites=true&w=majority&appName=Movienstitute1")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://singhasarkarmrinmoy:<4IkS90QyhSdje7co>@movieinstitute2.b1psl3l.mongodb.net/?retryWrites=true&w=majority&appName=Movieinstitute2")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://msarkartrade:<uafXl7koaIVzNXUI>@movienstitute2.gnopjbx.mongodb.net/?retryWrites=true&w=majority&appName=Movienstitute2")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
